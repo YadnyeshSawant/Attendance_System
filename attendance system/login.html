@@ -24,6 +24,7 @@
 		<form>
 			<label for="name">Name:
 			<select name="name" id="name">
+				<option value="--select--">--select--</option>
   			<option value="Ujwal">Ujwal</option>
   			<option value="Yadnyesh">Yadnyesh</option>
   			<option value="Bhagyashree">Bhagyashree</option>
@@ -36,13 +37,13 @@
 			<input type="date" id="date" name="date" required>
 
 			<label for="present">Present:</label>
-			<input type="radio" id="present" name="present" value="present">
+			<input type="radio" id="present" name="present" value="present" required>
 
             <label for="absent">Absent:</label>
-			<input type="radio" id="absent" name="absent" value="absent">
+			<input type="radio" id="absent" name="absent" value="absent" required>
 			
-
-			<button type="submit">Submit</button>
+			<button type="submit" onclick="location.reload()" >Submit</button>
+			<!-- <button type="submit" onclick="location.reload()"> </button>Submit</button> -->
             <br><br>
             <label><a href="Book1.xlsx">Download attendance file</a></label>
 		</form>
