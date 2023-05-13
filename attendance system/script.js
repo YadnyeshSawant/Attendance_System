@@ -65,6 +65,10 @@ function s2ab(s) {
 	}
 	return buf;
 }
+function setDate() {
+    var currentDate = new Date().toISOString().substr(0, 10);
+    document.getElementById("date").value = currentDate;
+  }
 // const form = document.querySelector('form');
 // const nameInput = document.querySelector('#name');
 // const dateInput = document.querySelector('#date');
