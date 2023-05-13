@@ -34,7 +34,13 @@
 			<!-- <input type="text" id="name" name="name" required> -->
 
 			<label for="date">Date:</label>
-			<input type="date" id="date" name="date" required>
+			<input type="date" id="date" name="date" value="" onload="setDate()" required>
+			<script>
+				function setDate() {
+				  var currentDate = new Date().toISOString().substr(0, 10);
+				  document.getElementById("date").value = currentDate;
+				}
+			  </script>
 
 			<label for="present">Present:</label>
 			<input type="radio" id="present" name="present" value="present" required>
